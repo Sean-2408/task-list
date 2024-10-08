@@ -1,0 +1,43 @@
+.modal{
+    border-radius: 10px;
+    width: 250px;
+    height: 70px;
+    background-color: rgb(80, 80, 90);
+    color: rgb(80, 51, 118);
+}
+.container{
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(80, 80, 90);
+    color: rgb(80, 51, 118);
+}
+.listcontainer{
+    outline: auto;
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgb(80, 80, 90);
+    color: rgb(80, 51, 118);
+}
+.background{
+    background-color: rgb(80, 80, 90);
+    color: rgb(80, 51, 118);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+button {
+    border-radius: 10px;
+    border: auto;
+    background-color: rgb(172, 172, 185);
+    color: rgb(71, 57, 107);
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
