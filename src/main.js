@@ -11,6 +11,7 @@ function createListItem(todo) {
     const checkboxDiv = document.createElement('div');
     // Here we construct an input element eg: <label></label>
     div.className = 'flex-container'
+    div.id = `todo_item_${todo}`
     const label = document.createElement('label');
     // Here we construct an input element eg: <input>
     const input = document.createElement('input');
@@ -20,11 +21,21 @@ function createListItem(todo) {
     label.innerText = todo;
     input.name = todo;
     label.htmlFor = todo;
-    const button = document.createElement('button');
+    const delButton = document.createElement('button');
     // Here we specify the type of input eg: <input type="checkbox">
-    button.id = `${todo}_btn_delete`;
-    button.innerText = 'Del';
-    button.className = 'btn_delete'
+    delButton.id = `${todo}_btn_delete`;
+    delButton.innerText = 'Del';
+    delButton.className = 'btn_delete'
+    delButton.addEventListener("click", (e) => {
+        deleteTask(div.id);
+    });
+    const comButton = document.createElement('button');
+    comButton.id = `${todo}_btn_complete`;
+    comButton.innerText = 'Com';
+    comButton.className = 'btn_complete'
+        button.addEventListener("click", (e) => {
+        completeTask(div.id);
+    });
     /* Here we add that checkbox to the div, eg: 
     <div> <-- This is the completedContainer
         <label>{{title}}</label>
@@ -32,7 +43,7 @@ function createListItem(todo) {
     </div>
     */
     checkboxDiv.append(input, label);
-    div.append(checkboxDiv, button);
+    div.append(checkboxDiv, comButton, delButton);
     completedContainer.append(div);
 }
 
@@ -53,3 +64,13 @@ function textPrompt() {
     }
 }
 
+function deleteTask(divId) {
+    console.log(divId);
+    const element = document.getElementById(divId)
+    if (element) {
+        element.remove();
+
+    }
+
+    
+}
