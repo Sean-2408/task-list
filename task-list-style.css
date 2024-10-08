@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .modal{
     border-radius: 10px;
     width: 250px;
@@ -39,5 +43,20 @@ button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 4px 2px;
     transition-duration: 0.4s;
-    cursor: pointer;
+    cursor: pointer;  
+  }
+
+  @media only screen and (max-width: 600px) {
+    .background {
+      background-color: rgb(98, 70, 113);
+      padding: 0.5rem 1rem;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .listcontainer{
+        width: 100%;
+    }
+    
   }
