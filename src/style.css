@@ -72,6 +72,15 @@ button {
     display: flex;
     align-self:flex-end;
     text-align: center;
+    justify-content: right;
+  }
+
+  .btn_complete {
+    width: 40px;
+    display: flex;
+    align-self:flex-end;
+    text-align: center;
+    justify-content: right;
   }
   .flex-container{
     display: flex;

@@ -1,4 +1,4 @@
-const completedContainer = document.getElementById('todo');
+const todoContainer = document.getElementById('todo');
 const data = [];
 data.forEach(item => {
     createListItem(item);
@@ -26,15 +26,16 @@ function createListItem(todo) {
     delButton.id = `${todo}_btn_delete`;
     delButton.innerText = 'Del';
     delButton.className = 'btn_delete'
-    delButton.addEventListener("click", (e) => {
+    delButton.addEventListener("click", () => {
         deleteTask(div.id);
     });
     const comButton = document.createElement('button');
     comButton.id = `${todo}_btn_complete`;
     comButton.innerText = 'Com';
     comButton.className = 'btn_complete'
-        button.addEventListener("click", (e) => {
+    comButton.addEventListener("click", () => {
         completeTask(div.id);
+        comButton.remove()
     });
     /* Here we add that checkbox to the div, eg: 
     <div> <-- This is the completedContainer
@@ -44,7 +45,7 @@ function createListItem(todo) {
     */
     checkboxDiv.append(input, label);
     div.append(checkboxDiv, comButton, delButton);
-    completedContainer.append(div);
+    todoContainer.append(div);
 }
 
 
@@ -65,7 +66,6 @@ function textPrompt() {
 }
 
 function deleteTask(divId) {
-    console.log(divId);
     const element = document.getElementById(divId)
     if (element) {
         element.remove();
@@ -73,4 +73,11 @@ function deleteTask(divId) {
     }
 
     
+}
+
+const completedContainer = document.getElementById('completed');
+
+function completeTask(divId) {
+    const element = document.getElementById(divId)
+    completedContainer.append(element)
 }
