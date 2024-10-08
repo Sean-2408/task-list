@@ -2,7 +2,7 @@
 const todoContainer = document.getElementById('todo');
 const completedContainer = document.getElementById('completed');
 // This is using for debugging purposes:
-const data = ['poopoo'];
+const data = ['poo'];
 data.forEach(item => {
     createListItem(item);
 });
@@ -11,9 +11,13 @@ data.forEach(item => {
 function createListItem(todo) {
     document.getElementById('todo_details').setAttribute('open', '');
     const div = document.createElement('div');
-    const checkboxDiv = document.createElement('div');
     div.className = 'flex-container'
+    const checkboxDiv = document.createElement('div');
+    checkboxDiv.className = 'flex-container'
     div.id = `todo_item_${todo}`
+    const buttonDiv = document.createElement('div')
+    buttonDiv.className = 'flex-container'
+    buttonDiv.id = `todo_item_${todo}`
     const label = document.createElement('label');
     const input = document.createElement('input');
     input.type = 'checkbox';
@@ -36,7 +40,8 @@ function createListItem(todo) {
 // 
 // Created Elements are added to a container here:
     checkboxDiv.append(input, label);
-    div.append(checkboxDiv, comButton, delButton);
+    buttonDiv.append(comButton, delButton);
+    div.append(checkboxDiv, buttonDiv);
     todoContainer.append(div);
 }
 // 
