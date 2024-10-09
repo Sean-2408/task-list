@@ -25,7 +25,30 @@ function createListItem(todo) {
     label.innerText = todo;
     input.name = todo;
     label.htmlFor = todo;
-// 
+
+    // const checkDiv = document.createElement('div');
+    // checkDiv.className ='checkbox-wrapper-31'
+    // const checkSvg = document.createElement('svg');
+    // checkSvg.setAttribute('viewBox',0, 0, 35.6, 35.6);
+    // const checkCirc = document.createElement('circle');
+    // checkCirc.className='background'
+    // checkCirc.setAttribute('cy', 17.8);
+    // checkCirc.setAttribute('cx', 17.8);
+    // checkCirc.setAttribute('r', 17.8);
+    // const checkStroke = document.createElement('circle');
+    // checkStroke.className='stroke'
+    // checkStroke.setAttribute('cy', 17.8);
+    // checkStroke.setAttribute('cx', 17.8);
+    // checkStroke.setAttribute('r', 14.37);
+    // const polyCheck = document.createElement('div');
+    // polyCheck.className='check'
+    // polyCheck.setAttribute('points', 11.78, 18.12, 15.55, 22.23, 25.17, 12.87);
+
+
+    // checkSvg.append(checkCirc, checkStroke, polyCheck);
+    // input.append(checkSvg);
+    // checkDiv.append(input);
+
 // Created Button Elements
     const delButton = createBtn(todo, 'delete', 'Del');
     delButton.addEventListener("click", () => {
@@ -38,10 +61,6 @@ function createListItem(todo) {
         comButton.remove()
     });
 
-    // const customCheckbox = customCheck(todo)
-    //     customCheckbox.addEventListener(createListItem, () =>{
-    //         customCheck(divId);
-    //     })
 // Created Elements are added to a container here:
     checkboxDiv.append(input, label);
     buttonDiv.append(comButton, delButton);
@@ -89,30 +108,30 @@ function completeTask(divId) {
     completedContainer.append(element)
 }
 
-function customCheck(divId) {
-    const checkDiv = document.createElement(div)
-    checkDiv.className = 'checkbox-wrapper-31'
-    const checkInput = document.createElement(input)
-    checkInput.type ='checkbox'
-    const checkSvg = document.createElement(svg)
-    checkSvg.viewBox='0 0 35.6 35.6'
-    const checkCirc = document.createElement(circle)
-    checkCirc.className='background'
-    checkCirc.cy='17.8'
-    checkCirc.cx='17.8'
-    checkCirc.r='17.8'
-    const checkStroke = document.createElement(circle)
-    checkStroke.className='stroke'
-    checkStroke.cy='17.8'
-    checkStroke.cx='17.8'
-    checkStroke.r='14.37'
-    const polyCheck = document.createElement(div)
-    polyCheck.className='check'
-    polyCheck.points='11.78 18.12 15.55 22.23 25.17 12.87'
+// function customCheck(divId) {
+//     const checkDiv = document.createElement(div)
+//     checkDiv.className = 'checkbox-wrapper-31'
+//     const checkInput = document.createElement(input)
+//     checkInput.type ='checkbox'
+//     const checkSvg = document.createElement(svg)
+//     checkSvg.viewBox='0 0 35.6 35.6'
+//     const checkCirc = document.createElement(circle)
+//     checkCirc.className='background'
+//     checkCirc.cy='17.8'
+//     checkCirc.cx='17.8'
+//     checkCirc.r='17.8'
+//     const checkStroke = document.createElement(circle)
+//     checkStroke.className='stroke'
+//     checkStroke.cy='17.8'
+//     checkStroke.cx='17.8'
+//     checkStroke.r='14.37'
+//     const polyCheck = document.createElement(div)
+//     polyCheck.className='check'
+//     polyCheck.points='11.78 18.12 15.55 22.23 25.17 12.87'
 
-    checkSvg.append(checkCirc, checkStroke, polyCheck)
-    checkDiv.append(checkInput, checkSvg)
-}
+//     checkSvg.append(checkCirc, checkStroke, polyCheck)
+//     checkDiv.append(checkInput, checkSvg)
+// }
 
 
 {/* <div class="checkbox-wrapper-31">

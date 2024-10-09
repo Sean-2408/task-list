@@ -1,12 +1,13 @@
 :root {
     --purple: #352746;
+    --darkpurple: #1E1332;
     --white: #ffffff;
     --grey: #3f3f3f;
 }
 
 #grad1 {
     background-color: var(--grey);
-    background-image: linear-gradient(#3f3f3f, black);
+    background-image: linear-gradient(black, #3f3f3f, black);
   }
   #grad2 {
     background-color: var(--purple);
@@ -69,9 +70,10 @@ button {
     margin: 4px 2px;
     transition-duration: 0.2s;
     cursor: pointer;  
-    color: #ffffff;
+    color: #e7e6e6;
     background-color: #564564;
     box-shadow: 0 5px #616060;
+    background-image: linear-gradient(#2b2a2a, #564564);
   }
   button:hover {
     animation-name: colorblend;
@@ -167,6 +169,19 @@ button {
   }
   .checkbox-wrapper-31 input[type=checkbox]:checked + svg .check {
     stroke-dashoffset: 0;
+  }
+  nav {
+    height: 50px;
+    background-color: var(--darkpurple);
+    background-image: linear-gradient(black, #1E1332);
+  }
+  footer{
+    display: flex;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(#1E1332, black);
+    
   }
 /*  */
   @keyframes colorblend {
