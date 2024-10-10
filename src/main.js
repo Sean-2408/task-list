@@ -3,7 +3,7 @@ const todoContainer = document.getElementById('todo');
 const completedContainer = document.getElementById('completed');
 const invaderContainer = document.getElementById('invaDiv');
 // This is using for debugging purposes:
-const data = JSON.parse(localStorage.getItem('taskList')) || [];
+let data = JSON.parse(localStorage.getItem('taskList')) || [];
 data.forEach(item => {
     createListItem(item);
 });
@@ -75,7 +75,9 @@ function deleteTask(divId) {
     const element = document.getElementById(divId)
     if (element) {
         element.remove();
-
+        const index = data.indexOf(divId);
+        data.splice(index, 1);
+        localStorage.setItem('taskList', JSON.stringify(data)); 
     }
 }
 
@@ -113,7 +115,8 @@ function customCheck(todo) {
     return checkDiv;
 }
 
-function spaceyboi(divID){
+
+function spaceyboi(divId){
     const invader = document.createElement('div');
     invader.className = 'space-invader';
 }
