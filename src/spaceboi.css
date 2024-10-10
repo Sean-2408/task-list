@@ -72,3 +72,10 @@
     50% {left:25px; top:5px; background: rgb(14, 14, 209);}
     100% {left:50px; top:0px; background: rgb(8, 248, 248);} 
   }
+
+  @media only screen and (max-width: 600px) {
+    .space-container{
+        width: 100%;
+        padding: 0;
+    }
+  }
