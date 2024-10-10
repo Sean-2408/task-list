@@ -26,28 +26,29 @@ function createListItem(todo) {
     input.name = todo;
     label.htmlFor = todo;
 
-    // const checkDiv = document.createElement('div');
-    // checkDiv.className ='checkbox-wrapper-31'
-    // const checkSvg = document.createElement('svg');
-    // checkSvg.setAttribute('viewBox',0, 0, 35.6, 35.6);
-    // const checkCirc = document.createElement('circle');
-    // checkCirc.className='background'
-    // checkCirc.setAttribute('cy', 17.8);
-    // checkCirc.setAttribute('cx', 17.8);
-    // checkCirc.setAttribute('r', 17.8);
-    // const checkStroke = document.createElement('circle');
-    // checkStroke.className='stroke'
-    // checkStroke.setAttribute('cy', 17.8);
-    // checkStroke.setAttribute('cx', 17.8);
-    // checkStroke.setAttribute('r', 14.37);
-    // const polyCheck = document.createElement('div');
-    // polyCheck.className='check'
-    // polyCheck.setAttribute('points', 11.78, 18.12, 15.55, 22.23, 25.17, 12.87);
+    const checkDiv = document.createElement('div');
+    checkDiv.className ='checkbox-wrapper-31'
+    const checkSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    checkSvg.setAttribute('viewBox', '0 0 35.6 35.6');
+    const checkCirc = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    checkCirc.setAttribute("class", "background");
+    checkCirc.setAttribute('cy', '17.8');
+    checkCirc.setAttribute('cx', '17.8');
+    checkCirc.setAttribute('r', '17.8');
+    const checkStroke = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    checkStroke.setAttribute("class", "stroke");
+    checkStroke.setAttribute('cy', '17.8');
+    checkStroke.setAttribute('cx', '17.8');
+    checkStroke.setAttribute('r', '14.37');
+    const polyCheck = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+    polyCheck.setAttribute("class", "check");
+    polyCheck.setAttribute('points', '11.78 18.12 15.55 22.23 25.17 12.87');
 
 
-    // checkSvg.append(checkCirc, checkStroke, polyCheck);
+    checkSvg.append(checkCirc, checkStroke, polyCheck);
+    // const checkDiv = nicosPoopyCode();
     // input.append(checkSvg);
-    // checkDiv.append(input);
+    checkDiv.append(input, checkSvg);
 
 // Created Button Elements
     const delButton = createBtn(todo, 'delete', 'Del');
@@ -62,10 +63,10 @@ function createListItem(todo) {
     });
 
 // Created Elements are added to a container here:
-    checkboxDiv.append(input, label);
+    checkboxDiv.append(label);
     buttonDiv.append(comButton, delButton);
     div.append(checkboxDiv, buttonDiv);
-    todoContainer.append(div);
+    todoContainer.append(div, checkDiv);
 }
 // 
 // This function executes the complete task function whilst removing the complete button from the appended entry.
