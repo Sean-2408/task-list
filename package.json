@@ -3,14 +3,6 @@
   "version": "1.0.0",
   "description": "https://nicmeister.notion.site/Junior-FE-Technical-Project-113da1d0ad988040aec0c74a6a6e2a5a?pvs=4\r ## To do:\r * Make \"Add Task\" look more like a call to action, eg more like a primary button, maybe size it? Pad it, Ask google!\r * Remove the outlines for the accordions or details tags you have\r * Make the text in these accordions more pleasant and readable",
   "main": "index.js",
-  "dependencies": {
-    "esbuild": "^0.21.5",
-    "nanoid": "^3.3.7",
-    "picocolors": "^1.1.0",
-    "postcss": "^8.4.47",
-    "rollup": "^4.24.0",
-    "source-map-js": "^1.2.1"
-  },
   "devDependencies": {
     "vite": "^5.4.8"
   },
