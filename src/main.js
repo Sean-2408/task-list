@@ -1,9 +1,10 @@
 // Constant variables are declared here:
+const tasklistKey = 'taskList';
 const todoContainer = document.getElementById('todo');
 const completedContainer = document.getElementById('completed');
 const invaderContainer = document.getElementById('invaDiv');
 // This is using for debugging purposes:
-let data = JSON.parse(localStorage.getItem('taskList')) || [];
+let data = JSON.parse(localStorage.getItem(tasklistKey)) || [];
 data.forEach(item => {
     createListItem(item);
 });
@@ -67,7 +68,7 @@ function textPrompt() {
     if (task != null) {
         createListItem(task)
         data.push(task)
-        localStorage.setItem('taskList', JSON.stringify(data));
+        taskStore()    
     }
 }
 
@@ -77,7 +78,7 @@ function deleteTask(divId) {
         element.remove();
         const index = data.indexOf(divId);
         data.splice(index, 1);
-        localStorage.setItem('taskList', JSON.stringify(data)); 
+        taskStore()
     }
 }
 
@@ -115,6 +116,9 @@ function customCheck(todo) {
     return checkDiv;
 }
 
+function taskStore(){
+    localStorage.setItem(tasklistKey, JSON.stringify(data));
+}
 
 function spaceyboi(divId){
     const invader = document.createElement('div');
