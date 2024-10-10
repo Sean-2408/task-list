@@ -2,84 +2,37 @@
     /* Modify size here: */
     --block-size: 5px;
   
-    box-shadow: 0 0 0 var(--block-size) #791e81,
-    0 var(--block-size) 0 var(--block-size) #791e81,
-    calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #791e81,
-    calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #791e81,
-    calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #791e81,
-    calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #791e81,
-    calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #791e81,
-    calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #791e81,
-    calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * -4) 0 0 0 #791e81,
-    calc(var(--block-size) * -3) 0 0 0 #791e81,
-    calc(var(--block-size) * 3) 0 0 0 #791e81,
-    calc(var(--block-size) * 4) 0 0 0 #791e81,
-    calc(var(--block-size) * -5) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * -4) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * 4) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * 5) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #791e81,
-    calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #791e81,
-    calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #791e81,
-    calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #791e81,
-    var(--block-size) calc(var(--block-size) * 4) 0 0 #791e81,
-    calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #791e81;
-    background: #791e81;
-    width: var(--block-size);
-    height: var(--block-size);
-    overflow: hidden;
-
-    position: relative;
-
-    animation-name: boi;
-      animation-duration: 800ms;
-      animation-delay: 0s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: linear;
-  }.space-invader {
-    /* Modify size here: */
-    --block-size: 5px;
-  
-    box-shadow: 0 0 0 var(--block-size) #791e81,
-    0 var(--block-size) 0 var(--block-size) #791e81,
-    calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #791e81,
-    calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #791e81,
-    calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #791e81,
-    calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #791e81,
-    calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #791e81,
-    calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #791e81,
-    calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #791e81,
-    calc(var(--block-size) * -4) 0 0 0 #791e81,
-    calc(var(--block-size) * -3) 0 0 0 #791e81,
-    calc(var(--block-size) * 3) 0 0 0 #791e81,
-    calc(var(--block-size) * 4) 0 0 0 #791e81,
-    calc(var(--block-size) * -5) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * -4) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * 4) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * 5) var(--block-size) 0 0 #791e81,
-    calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #791e81,
-    calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #791e81,
-    calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #791e81,
-    calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #791e81,
-    calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #791e81,
-    var(--block-size) calc(var(--block-size) * 4) 0 0 #791e81,
-    calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #791e81;
-    background: #791e81;
+    box-shadow: 0 0 0 var(--block-size) #1d0b3b,
+    0 var(--block-size) 0 var(--block-size) #1d0b3b,
+    calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #1d0b3b,
+    calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #1d0b3b,
+    calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #1d0b3b,
+    calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #1d0b3b,
+    calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #1d0b3b,
+    calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #1d0b3b,
+    calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #1d0b3b,
+    calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #1d0b3b,
+    calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #1d0b3b,
+    calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #1d0b3b,
+    calc(var(--block-size) * -4) 0 0 0 #1d0b3b,
+    calc(var(--block-size) * -3) 0 0 0 #1d0b3b,
+    calc(var(--block-size) * 3) 0 0 0 #1d0b3b,
+    calc(var(--block-size) * 4) 0 0 0 #1d0b3b,
+    calc(var(--block-size) * -5) var(--block-size) 0 0 #1d0b3b,
+    calc(var(--block-size) * -4) var(--block-size) 0 0 #1d0b3b,
+    calc(var(--block-size) * 4) var(--block-size) 0 0 #1d0b3b,
+    calc(var(--block-size) * 5) var(--block-size) 0 0 #1d0b3b,
+    calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #1d0b3b,
+    calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #1d0b3b,
+    calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #1d0b3b,
+    calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #1d0b3b,
+    calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #1d0b3b,
+    calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #1d0b3b,
+    calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #1d0b3b,
+    calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #1d0b3b,
+    var(--block-size) calc(var(--block-size) * 4) 0 0 #1d0b3b,
+    calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #1d0b3b;
+    background: #1d0b3b;
     width: var(--block-size);
     height: var(--block-size);
     overflow: hidden;
@@ -93,8 +46,29 @@
       animation-direction: alternate;
       animation-timing-function: linear;
   }
+.space-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 20px;
+}
+.space-container{
+    background-image: linear-gradient(#414040, #ece4f146, #464646);
+    border-radius: 10px;
+    width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 4px solid #564564;
+}
+
+    .invaBox1{
+        height: 100px;
+        width: 100px;
+    }
 
   @keyframes boi{
-    0%   {left:50px; top:0px;}
-    100% {left:100px; top:0px;} 
+    0%   {left:0px; top:0px; background: #c242ce;}
+    50% {left:25px; top:5px; background: rgb(14, 14, 209);}
+    100% {left:50px; top:0px; background: rgb(8, 248, 248);} 
   }
