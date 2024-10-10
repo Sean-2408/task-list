@@ -105,6 +105,9 @@ button {
         align-items: center;
         justify-content: space-between;
   }
+  .flex-container label{
+    padding-left: 10px;
+  }
   /* input[type='checkbox']{
     width: 1.5rem;
     height: 1.5rem;
@@ -118,8 +121,9 @@ button {
   .checkbox-wrapper-31 {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
   }
   .checkbox-wrapper-31 .background {
     fill: #ccc;
@@ -183,8 +187,8 @@ button {
     background-image: linear-gradient(#1E1332, black);
     
   }
-/*  */
-  @keyframes colorblend {
+
+  @keyframes colorblend{
     0%   {background-color:#564564; left:0px; top:0px;}
     50%  {background-color:var(--grey); left:200px; top:200px;}
     100% {background-color:#564564; left:0px; top:0px;}
