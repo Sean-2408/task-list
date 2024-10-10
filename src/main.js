@@ -12,6 +12,8 @@ let data = JSON.parse(localStorage.getItem(tasklistKey)) || [];
 data.forEach(item => {
     createListItem(item, false);
 });
+
+document.getElementById('add_task').addEventListener('click', () => textPrompt());
 // 
 // Task items are created here and added to the todo list using user input:
 function createListItem(todo, isCompleted) {
