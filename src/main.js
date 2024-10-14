@@ -1,3 +1,4 @@
+import { getTodoItems, deleteTaskItemById } from './api.js';
 // Constant variables are declared here:
 const tasklistKey = 'taskList';
 const comlistKey = 'comList';
@@ -8,10 +9,17 @@ let comData = JSON.parse(localStorage.getItem(comlistKey)) || [];
 comData.forEach(item => {
     createListItem(item, true);
 });
-let data = JSON.parse(localStorage.getItem(tasklistKey)) || [];
-data.forEach(item => {
-    createListItem(item, false);
-});
+
+let data = [];
+
+async function start(){
+    data = await getTodoItems();
+    data.forEach(item => {
+        createListItem(item, false);
+    });
+}
+
+start();
 
 document.getElementById('add_task').addEventListener('click', () => textPrompt());
 // 
@@ -34,7 +42,9 @@ function createListItem(todo, isCompleted) {
 
 // Created Button Elements
     const delButton = createBtn(todo, 'delete', 'Del');
-    delButton.addEventListener("click", () => {
+    delButton.addEventListener("click", async() => {
+        const taskName= div.id.split('todo_item_')[1];
+        await deleteTaskItemById(taskName);
         deleteTask(div.id);
     });
 
