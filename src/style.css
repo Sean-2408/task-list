@@ -1,5 +1,5 @@
 :root {
-    --purple: #352746;
+    --purple: #943efd60;
     --darkpurple: #1E1332;
     --white: #ffffff;
     --grey: #3f3f3f;
@@ -7,20 +7,20 @@
 
 #grad1 {
     background-color: var(--grey);
-    background-image: linear-gradient(black, #3f3f3f, black);
+    background-image: linear-gradient(black, #252525, black);
   }
   #grad2 {
     background-color: var(--purple);
-    background-image: linear-gradient(#352746, black);
+    background-image: linear-gradient(#181818, rgb(44, 44, 44));
   }
 
   #todo_details {
     background-color: var(--purple);
-    background-image: linear-gradient(#352746, black);
+    background-image: linear-gradient(#181818, rgb(44, 44, 44));
   }
     #com_details {
         background-color: var(--purple);
-        background-image: linear-gradient(#352746, black);  
+        background-image: linear-gradient(#181818, rgb(44, 44, 44));  
   }
     body {
     height: 700px;
@@ -47,11 +47,11 @@ h1{
     width: 500px;
     margin: 1rem auto;
     padding: 1rem;
-    border: 4px solid #564564;
+    border: 4px solid var(--purple);
 }
 .listcontainer{
     background-color:var(--purple);
-    border: 4px solid #564564;
+    border: 4px solid var(--purple);
     border-radius: 12px;
     width: 500px;
     margin: 1rem auto;
@@ -70,10 +70,10 @@ button {
     margin: 4px 2px;
     transition-duration: 0.2s;
     cursor: pointer;  
-    color: #e7e6e6;
+    color: #e7e6e6b0;
     background-color: #564564;
-    box-shadow: 0 5px #616060;
-    background-image: linear-gradient(#2b2a2a, #564564);
+    box-shadow: 0 5px #2411369d;
+    background-image: linear-gradient(#2b2a2a, #141414);
   }
   button:hover {
     animation-name: colorblend;
@@ -199,7 +199,7 @@ button {
     }
     .container{
         width: 100%;
-        padding: 0px;
+        padding:   0px;
     }
     .listcontainer{
         width: 100%;

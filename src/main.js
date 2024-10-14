@@ -96,9 +96,10 @@ function deleteTask(divId) {
 function completeTask(divId) {
     const element = document.getElementById(divId)
     completedContainer.append(element)
-    comData.push(divId)
+    const taskName= divId.split('todo_item_')[1];
+    comData.push(taskName);
     comStore();
-    removeItemFromTaskArray(divId)
+    removeItemFromTaskArray(taskName);
 }
 
 function customCheck(todo) {
